@@ -1,0 +1,683 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+}
+
+header{
+  z-index: 999;
+}
+
+.textoheader {
+  display: flex;
+  width: 85%;
+  gap: 16px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.textoheader a {
+  font-family: "Sora", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #424242;
+    fill: #424242;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-bottom: 1px solid transparent;
+    
+    
+}
+
+.textoheader a:hover {
+  border-bottom: 3px solid #146E3A10;
+  color: #146E3A;
+  transition: 0.3s;
+  overflow: visible;
+  
+  
+  
+}
+.textoheader .contact-button {
+  font-family: "Sora", Sans-serif;
+    font-weight: 600;
+    background-color: #146E3A;
+    color: white;
+    border-radius: 3px;
+    
+}
+
+.containerimagem {
+  
+  
+  
+  background-image: url('../BG01.webp');
+  background-size: cover;
+  background-position: center;
+  
+  width: 1906px;
+  height: 675px;
+  margin-top: -120px;
+  padding-top: 150px;
+  padding-left: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+  
+}
+
+
+.botaocidadania  {
+  font-family: "Sora", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #146E3A;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+    
+    
+    
+
+}
+
+.removestylelink {
+  color: white;
+  text-decoration: none;
+  max-width: fit-content;
+}
+
+
+.textoinfo h1 {
+  color: #3E3E3E;
+    font-family: "Sora", Sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: -0.3px;
+}
+
+.textoinfo p {
+  color: #3E3E3E;
+    font-family: "Sora", Sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    
+}
+
+.textoinfo {
+  max-width: 500px;
+}
+
+.bodytexto {
+  
+  
+  z-index: 1;
+}
+
+.botaocidadania a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+ 
+
+.mainsection {
+  display: flex;
+  padding: 24px;
+  flex-direction: row;
+  
+  
+}
+
+.textomain h1 {
+  max-width: 500px;
+  color: #3E3E3E;
+    font-family: "Sora", Sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: -0.3px;
+}
+
+
+.textomain p {
+  color: #3E3E3E;
+    font-family: "Sora", Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    max-width: 360px;
+    
+   
+}
+
+.textomain p2 {
+  color: #E60509;
+    font-family: "Sora", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+}
+
+.contact-button {
+  font-family: "Sora", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #146E3A;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+}
+
+
+.containercolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.bandeiracontainer {
+  display: flex;
+  
+  flex-direction: column;
+  gap: 12px;
+ 
+  
+}
+
+.containerhero {
+  
+  
+  background-image: url('../italianflag.webp');
+  background-repeat: no-repeat;
+  height: 165px;
+  width: 605px;
+ 
+}
+
+.textomain {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  
+}
+
+.containerbandeiratexto {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.citycontainer{
+  display: flex;
+  justify-content: center;
+  padding: 130px;
+  
+}
+
+.citybackground {
+  background-image: url('../europacidadaniafundobranco.png');
+  background-repeat: no-repeat;
+   background-size: cover;
+  background-position: right;
+  background-position-y: bottom;
+  
+  
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+}
+
+
+
+.headercontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.headercontainer p {
+  font-family: "Sora", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  color: #E60509;
+  transition: color 0.3s;
+  position: absolute;
+
+  
+}
+
+
+.headercontainer h1 {
+  color: #3E3E3E;
+    font-family: "Sora", Sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: -0.3px;
+    max-width: 900px;
+    display: flex;
+    text-align: center;
+    padding: 30px;
+    
+    
+}
+
+.carrosselcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+  
+}
+
+.carrosselcontainer1 {
+  background-image: url('../leilaromano.png');
+  background-repeat: no-repeat;
+  height: 194px;
+  width: 372px;
+  background-size: contain;
+  
+
+  
+}
+.carrosselcontainer2 {
+  background-image: url('../giuliafontana.png');
+  background-repeat: no-repeat;
+  height: 194px;
+  width: 372px;
+  background-size: contain;
+}
+.carrosselcontainer3 {
+  background-image: url('../alexandredeluca.png');
+  background-repeat: no-repeat;
+  height: 194px;
+  width: 372px;
+  background-size: contain;
+}
+
+.fundoquemtemdireito {
+  background-image: url('../fundo-quem-tem-direito.webp');
+  background-repeat: no-repeat;
+  height: 799px;
+  width: 1250px;
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.fundoquemtemdireito p {
+  font-family: "Sora", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+    color: #E60509;
+    transition: color 0.3s;
+}
+
+.containertextodireito {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+.containertextodireito p1 {
+  color: #3E3E3E;
+    font-family: "Sora", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    max-width: 400px;
+}
+
+.containertextodireito p2 {
+  color: #3E3E3E;
+    font-family: "Sora", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    max-width: 450px;
+}
+
+.containertextodireito h1 {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  color: #3E3E3E;
+      font-family: "Sora", Sans-serif;
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 41px;
+      letter-spacing: -0.6px;
+      max-width: 380px;
+ 
+}
+
+
+.cardbaixo {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  
+}
+
+
+.cardbaixo p {
+  color: #E60509;
+    font-family: "Sora", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+   
+}
+
+.cardvermelho {
+  width: 336px; 
+  height: 400px; 
+  background-color:#DF1E2F;
+  border-radius: 0 20px 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  
+}
+
+.cardverde {
+  width: 336px; 
+  height: 400px; 
+  background-color:#146E3A;
+  border-radius: 0 20px 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  
+  
+}
+
+.cardverde2 {
+  width: 336px; 
+  height: 400px; 
+  background-color:#146E3A;
+  border-radius: 0 20px 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+ 
+}
+
+.todoscards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+ 
+}
+
+
+
+.containerazul {
+  
+  padding: 50px 0px 0px 0px;
+}
+
+.azulbackground {
+  background-image: url('../detail-from-ancient-colosseum-rome-italy-1.webp');
+  background-repeat: no-repeat;
+  overflow: auto;
+ 
+  height: 1245px;
+  width: 1918px;
+ 
+  
+}
+
+.brancobackground {
+text-align: center;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  width: 1000px;
+  background-position: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+  
+  
+  
+  
+ 
+  
+ 
+}
+
+.brancobackground h1 {
+  color: #3E3E3E;
+    font-family: "Sora", Sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: -0.3px;
+    max-width: 300px;
+    padding: 10px;
+    
+    
+}
+
+.brancobackground p {
+  text-align: center;
+    color: #3E3E3E;
+    font-family: "Sora", Sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -1px;
+    padding: 15px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.falarespecialistabotao{
+  font-family: "Sora", Sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #146E3A;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px 30px 20px 30px;
+  text-decoration: none;
+  
+  
+}
+
+.buttonposicao {
+  padding: 20px;
+
+}
+
+.textoespecialistas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: fit-content;
+  
+  margin-left: 90px;
+  
+}
+
+
+
+.textoespecialistas p {
+  color: #FFFFFF;
+    font-family: "Sora", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    max-width: fit-content;
+}
+
+.textoespecialistas h1 {
+  color: #FFFFFF;
+    font-family: "Sora", Sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: -0.3px;
+    max-width: 350px;
+}
+
+.textoespecialistas p1 {
+  color: #FFFFFF;
+    font-family: "Sora", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+   max-width: 390px;
+}
+
+.textoespecialistas p2 {
+  color: #FFFFFF;
+    font-family: "Sora", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    max-width: 390px;
+}
+.textoespecialistas p3 {
+  color: #FFFFFF;
+    font-family: "Sora", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    max-width: 390px;
+}
+.textoespecialistas p4 {
+  color: #FFFFFF;
+    font-family: "Sora", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    max-width: 390px;
+}
+
+
+.containerbranco {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  
+}
+
+.containerbranco h1 {
+  max-width: 200px;
+}
+
+.contatoespecialistas {
+  background-image: url('../familiacoliseu.webp');
+  width: 1920px;
+  height: 630px;
+  background-repeat: no-repeat;
+  
+}
+
+.quadradobandeira {
+  background-image: url('../retangulo-bandeira.webp');
+  background-repeat: no-repeat;
+  height: 609px;
+  width: 691px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.containercontatoquadrado {
+  display: flex;
+  
+}
+
+.footer {
+  display:flex;
+  justify-content: center;
+  
+  background-color: #0D3384;
+  background-repeat: no-repeat;
+  
+
+ 
+}
+
+
+.escritoriosp {
+  text-align: center;
+    color: #FFFFFF;
+    font-family: "Sora", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    max-width: 300px;
+}
+
+.escritoriopt {
+  text-align: center;
+    color: #FFFFFF;
+    font-family: "Sora", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    max-width: 300px;
+}
+
+.textocontato {
+  text-align: center;
+    color: #FFFFFF;
+    font-family: "Sora", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    max-width: 300px;
+}
+
+.textoemail {
+  text-align: center;
+    color: #FFFFFF;
+    font-family: "Sora", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    max-width: 300px;
+}
