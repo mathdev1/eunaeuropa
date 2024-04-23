@@ -17,7 +17,9 @@ export default component$(()=>{
           <a href="#direitos">Quem tem direito </a>
           <a href="#vantagens">Vantagens </a>
           <a href="#sobre">Sobre nós </a>
+          
           <a href="#contato" class="contact-button">Contato</a>
+          
 
           
 

@@ -1,8 +1,11 @@
-import { component$ } from "@builder.io/qwik";
+
+import ImgLogoSiteNegativa from '~/media/logo_site_negativa.png?jsx';import { component$ } from "@builder.io/qwik";
 
 export default component$(()=>{
     return (
         <div class="footer">
+
+            <ImgLogoSiteNegativa  style={{width:'250px',objectFit:'contain'}}/>
             
             <div class="escritoriosp">
             <p>Escritório São Paulo</p>

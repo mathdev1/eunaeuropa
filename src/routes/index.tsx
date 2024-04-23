@@ -13,6 +13,7 @@ export default component$(() => {
 
 
 <Header/>
+
 <Body/>
 <div class="containerbandeiratexto">
 <div class="mainsection">
