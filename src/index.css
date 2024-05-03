@@ -708,13 +708,32 @@ display: flex;
 }
 
 .containertextodireito p {
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
   @media screen and (max-width:600px) {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     
     
     
+  }
+}
+
+.botaocidadania2 {
+  font-family: "Sora", Sans-serif;
+  font-weight: 600;
+  background-color: #146E3A;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
+  margin-top: 20px;
+
+  @media screen and (max-width:600px) {
+    max-width: 300px;
   }
 }
 
@@ -735,7 +754,7 @@ display: flex;
   max-width: 400px;
   @media screen and (max-width:600px) {
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     
     
   }
@@ -752,7 +771,7 @@ display: flex;
 
   @media screen and (max-width:600px) {
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     
     
   }
@@ -1098,10 +1117,14 @@ display: flex;
   line-height: 32px;
   letter-spacing: -0.9px;
   max-width: fit-content;
+  display: flex;
+  gap: 5px;
   @media screen and (max-width:600px) {
     align-self: center;
         font-size: 17px;
         line-height: 1.3em;
+        display: flex;
+        align-items: center;
     
   }
 

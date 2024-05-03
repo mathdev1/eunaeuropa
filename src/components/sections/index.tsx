@@ -28,7 +28,7 @@ export default component$(() => {
                     
                     <div class="textoespecialistas" id="sobre">
 
-                        <p>Sobre a Eu Na Europa</p>
+                        <p><img src='../medalha.png' width={30} height={30}/>Sobre a Eu Na Europa</p>
                         
                         <h1>Somos especialistas em cidadania italiana</h1>
                         <p1>Nascemos para dar ao nosso cliente uma assessoria imperiosamente completo no Brasil e na Europa, com a finalidade de torná-lo um cidadão europeu.</p1>

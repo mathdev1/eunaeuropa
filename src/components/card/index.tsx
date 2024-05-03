@@ -43,6 +43,7 @@ export default component$(() => {
                             <h1>Todo descendente de um cidadão italiano tem o direito à cidadania, sem limite de gerações!</h1>
                             <p1>Sendo assim, todo e qualquer descendente de italiano que quer ser reconhecido, precisará apenas verificar a árvore genealógica da sua família e buscar as certidões que comprovam a sua origem.</p1>
                             <p2>A Eu Na Europa avalia <strong>cada caso individualmente</strong> e decide qual a melhor opção para obter o reconhecimento da sua cidadania.</p2>
+                            <a href="#contato" class="botaocidadania2 removestylelink">QUERO MINHA CIDADANIA ITALIANA</a>
                         </div>
                         <div class="imagemfundo">
                             <ImgImagemfundo />
