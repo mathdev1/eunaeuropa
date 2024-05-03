@@ -1,10 +1,4 @@
-@font-face {
-  font-family: "Sora";
-  font-family: sans-serif;
-  
-  src: url('../fonts/Sora-VariableFont_wght.ttf') format("ttf");
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Sora:wght@100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
 
@@ -14,114 +8,170 @@
   overflow-x: hidden;
 
   box-sizing: border-box;
+
 }
 
-header{
+header {
   z-index: 999;
 }
 
+
+
+
 .textoheader {
   display: flex;
-  width: 85%;
+  
   gap: 16px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
+
+  @media screen and (max-width:600px) {
+    width: 100%;
+
+  }
+
 }
+
 
 .textoheader a {
   font-family: "Sora", Sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #424242;
-    fill: #424242;
-    text-decoration: none;
-    padding: 12px 24px;
-    border-bottom: 1px solid transparent;
-    
-    
+  font-size: 18px;
+  font-weight: 400;
+  color: #424242;
+  fill: #424242;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-bottom: 3px solid transparent;
+
+  @media screen and (max-width:600px) {
+    display: none
+  }
+
 }
+
+
 
 .textoheader a:hover {
   border-bottom: 3px solid #146E3A10;
+  box-sizing: border-box;
   color: #146E3A;
   transition: 0.3s;
   overflow: visible;
-  
-  
-  
+
+
+
 }
+
 .textoheader .contact-button {
   font-family: "Sora", Sans-serif;
-    font-weight: 600;
-    background-color: #146E3A;
-    color: white;
-    border-radius: 3px;
-    padding: 10px 10px 10px 10px;
-   
-    
+  font-weight: 600;
+  background-color: #146E3A;
+  color: white;
+  border-radius: 3px;
+  padding: 10px 10px 10px 10px;
 
-    
+
+
+
 }
 
 .textoheader .contact-button:hover {
-  transition: none;
-  overflow: none;
-  text-decoration: none;
-  border:none;
-  color: none;
+  color: white;
 }
 
 .containerimagem {
-  
-  
-  
+
+
+
   background-image: url('../BG01.webp');
   background-size: cover;
   background-position: center;
-  
-  width: 1906px;
-  height: 675px;
+
+  width: 100%;
+  height: auto;
   margin-top: -120px;
   padding-top: 150px;
   padding-left: 230px;
   display: flex;
   
-  
-  
-  
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-top: 100px;
+
+
+
+
+  }
+
+
+
+
+
+}
+
+.containertextomulher {
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+  }
   
 }
+
 
 .mulherbandeira {
   display: flex;
   justify-content: center;
-  
-  
+
+
 }
 
 .mulherbandeira img {
   height: auto;
   width: 100%;
-  
+
+  @media screen and (max-width:600px) {
+    display: flex
+  }
+
 }
 
 
 
 
 
-.botaocidadania  {
+.botaocidadania {
   font-family: "Sora", Sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #146E3A;
-    border-radius: 10px 10px 10px 10px;
-    padding: 20px 20px 20px 20px;
-    box-shadow: none;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #146E3A;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
+  box-shadow: none;
+  margin-top: 40px;
+
+  @media screen and (max-width:600px) {
+    padding: 15px;
     
-    
-    
+
+
+
+
+
+
+  }
+
+
+
+
 
 }
 
@@ -134,90 +184,179 @@ header{
 
 .textoinfo h1 {
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 41px;
-    letter-spacing: -0.3px;
+  font-family: "Sora", Sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: -0.3px;
+
+  @media screen and (max-width:600px) {
+    font-size: 25px;
+    line-height: 1.2em;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    height: auto;
+    
+
+
+
+
+
+
+  }
 }
 
 .textoinfo p {
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    
+  font-family: "Sora", Sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+
+  
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.3em;
+    width: 100%;
+    max-width: 350px;
+    padding-top: 20px;
+
+
+  }
 }
 
 .textoinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   max-width: 500px;
+  
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+
+
+
+  }
+}
+
+.textoinfo p1 {
+  background: -webkit-linear-gradient(50deg, #df1e2f, #075631);
+   background-clip: text; 
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
 
-.botaocidadania a{
+.botaocidadania  {
   text-decoration: none;
   color: white;
+  @media screen and (max-width:600px) {
+    font-size: 15px;
+  }
+  
+  
 }
 
 
 
 
 
- 
+
 
 .mainsection {
   display: flex;
   padding: 24px;
   flex-direction: row;
   gap: 40px;
-  
-  
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
 }
 
 .textomain h1 {
   max-width: 500px;
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 41px;
-    letter-spacing: -0.3px;
+  font-family: "Sora", Sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: -0.3px;
+
+  @media screen and (max-width:600px) {
+    text-align: center;
+    font-size: 23px;
+        line-height: 1.2em;
+        
+  }
 }
 
 
 .textomain p {
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    max-width: 360px;
-    
-   
+  font-family: "Sora", Sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  max-width: 360px;
+
+  @media screen and (max-width:600px) {
+    text-align: center;
+        font-size: 17px;
+        line-height: 1.3em;
+  }
+
 }
 
 .textomain p2 {
   color: #E60509;
-    font-family: "Sora", Sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
+  font-family: "Sora", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  display: flex;
+  gap: 5px;
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .contact-button {
   font-family: "Sora", Sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #146E3A;
-    border-radius: 10px 10px 10px 10px;
-    padding: 20px 20px 20px 20px;
-    text-decoration: none;
-    
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #146E3A;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+
+  @media screen and (max-width:600px) {
+    font-size: 14px;
+    align-items: center;
+  }
+
 }
 
 
@@ -227,58 +366,25 @@ header{
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+
 }
+
 
 
 
 .bandeiracontainer {
   display: flex;
-  
   flex-direction: column;
   gap: 12px;
- 
-  
+
+  @media screen and (max-width:600px) {}
+
+
 }
 
-.containerhero {
-  color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-  background-image: url('../italianflag.webp');
-  background-repeat: no-repeat;
-  height: 165px;
-  width: 605px;
 
-  
- 
-}
 
-.containerbusca {
-  display: flex;
-  flex-direction: column;
-  padding-left: 30px;
-  
-  
-}
-
-.containerimagemdoc {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.containerhero p {
- padding-top: 30px;
-  
-  
-}
-
-.containerhero p4 {
-  max-width: 400px;
-}
 
 .containerselo {
   display: flex;
@@ -286,7 +392,7 @@ header{
   align-items: center;
   padding-left: 20px;
 
- 
+
 }
 
 .containersemsurpresas {
@@ -304,7 +410,7 @@ header{
   display: flex;
   flex-direction: column;
   padding-left: 10px;
-  
+
 }
 
 .containerimagemcasa {
@@ -340,39 +446,63 @@ header{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
-  
+
+  @media screen and (max-width:600px) {
+    
+  }
+
+
 }
 
 .containerbandeiratexto {
   display: flex;
   justify-content: center;
- 
+
+  @media screen and (max-width:600px) {}
+
+
 }
 
-.citycontainer{
+.citycontainer {
   display: flex;
   justify-content: center;
   padding: 130px;
-  
+
+  @media screen and (max-width:600px) {
+    padding: 0
+    
+  }
+
 }
 
 .citybackground {
   background-image: url('../europacidadaniafundobranco.png');
   background-repeat: no-repeat;
-   background-size: cover;
+  background-size: cover;
   background-position: right;
   background-position-y: bottom;
-  
-  
+  overflow: hidden;
+
+
 }
 
 .cardcontainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
   flex-direction: column;
-  
-  
-  
+  overflow: hidden;
+
+  @media screen and (max-width:600px) {
+    display:flex;
+    padding-top: 20px;
+    
+    
+  }
+
+
+
 }
 
 
@@ -380,6 +510,17 @@ header{
 .headercontainer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  
+  @media screen and (max-width:600px) {
+    display: flex;
+    text-align: center;
+        
+    
+   
+
+    
+  }
 }
 
 .headercontainer p {
@@ -389,34 +530,85 @@ header{
   letter-spacing: -0.8px;
   color: #E60509;
   transition: color 0.3s;
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 3px;
 
-  
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 24px;
+    
+
+    
+  }
+
+
 }
+
+
 
 
 .headercontainer h1 {
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 41px;
-    letter-spacing: -0.3px;
-    max-width: 900px;
-    display: flex;
+  font-family: "Sora", Sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: -0.3px;
+  max-width: 900px;
+  display: flex;
+  text-align: center;
+  padding: 30px;
+
+  @media screen and (max-width:600px) {
+    
     text-align: center;
-    padding: 30px;
+    font-size: 25px;
+    line-height: 1.2em;
+
+    
+
     
     
+  }
+
+
 }
 
 .carrosselcontainer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 30px;
-  
+  overflow: hidden;
+  width: 100%;
+  @media screen and (max-width:600px) {
+    overflow-x: scroll;
+    
+  }
+
+
 }
+.carrosselcontainer img {
+  min-width: 320px;
+  object-fit: contain;
+}
+.slidercontainer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+
+  @media screen and (max-width:600px) {
+    
+  }
+  
+
+}
+
+
 
 .carrosselcontainer1 {
   background-image: url('../leilaromano.png');
@@ -424,10 +616,11 @@ header{
   height: 194px;
   width: 372px;
   background-size: contain;
-  
 
-  
+
+
 }
+
 .carrosselcontainer2 {
   background-image: url('../giuliafontana.png');
   background-repeat: no-repeat;
@@ -435,59 +628,134 @@ header{
   width: 372px;
   background-size: contain;
 }
+
 .carrosselcontainer3 {
   background-image: url('../alexandredeluca.png');
   background-repeat: no-repeat;
-  height: 194px;
-  width: 372px;
+  height: 200px;
+  width: 799px;
   background-size: contain;
 }
+
+
 
 .fundoquemtemdireito {
   background-image: url('../fundo-quem-tem-direito.webp');
   background-repeat: no-repeat;
-  height: 799px;
-  width: 1250px;
-  display: flex;
- 
+display: flex;
+  border-radius: 20px;
+  padding: 24px;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  flex-direction: row;
+  width: 1250px;
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  
+    background-size: cover;
+    padding: 24px;
+    background-position: center;
+    justify-content: center;
+    
+  }
+  
+}
+
+.imagemfundo {
+  @media screen and (max-width:600px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+}
+
+.fundoquemtemdireito img {
+  @media screen and (max-width:600px) {
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+  }
 }
 
 .fundoquemtemdireito p {
   font-family: "Sora", Sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: -0.8px;
-    color: #E60509;
-    transition: color 0.3s;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  color: #E60509;
+  transition: color 0.3s;
 }
 
 .containertextodireito {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  
+
+  @media screen and (max-width:600px){
+    font-size: 26px;
+        line-height: 1.2em;
+        text-align: center;
+        padding: 15px;
+    
+  }
+
 }
+
+.containertextodireito p {
+  @media screen and (max-width:600px) {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    
+    
+  }
+}
+
+
+.imagemfundo img {
+  @media screen and (max-width:600px) {
+    width: 85%;
+  }
+}
+
 .containertextodireito p1 {
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    max-width: 400px;
+  font-family: "Sora", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  max-width: 400px;
+  @media screen and (max-width:600px) {
+    text-align: center;
+    font-size: 15px;
+    
+    
+  }
 }
 
 .containertextodireito p2 {
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    max-width: 450px;
+  font-family: "Sora", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  max-width: 450px;
+
+  @media screen and (max-width:600px) {
+    text-align: center;
+    font-size: 15px;
+    
+    
+  }
 }
 
 .containertextodireito h1 {
@@ -495,13 +763,21 @@ header{
   padding: 0;
   margin: 0;
   color: #3E3E3E;
-      font-family: "Sora", Sans-serif;
-      font-size: 35px;
-      font-weight: 600;
-      line-height: 41px;
-      letter-spacing: -0.6px;
-      max-width: 380px;
- 
+  font-family: "Sora", Sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: -0.6px;
+  max-width: 380px;
+
+  @media screen and (max-width:600px) {
+    font-size: 25px;
+        line-height: 1.2em;
+        text-align: center;
+        
+    
+  }
+
 }
 
 
@@ -509,63 +785,100 @@ header{
   display: flex;
   justify-content: center;
   padding: 40px;
-  
+
 }
 
 
 .cardbaixo p {
   color: #E60509;
-    font-family: "Sora", Sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
+  font-family: "Sora", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  display: flex;
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
    
+  }
+
 }
 
+
+
+
 .cardvermelho {
-  width: 336px; 
-  height: 400px; 
-  background-color:#DF1E2F;
+  width: 336px;
+  height: auto;
+  background-color: #DF1E2F;
   border-radius: 0 20px 0 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-  
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+   
+  }
+
+
 }
 
 .cardvermelho h1 {
   color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 41px;
-    letter-spacing: -0.8px;
-    max-width: 250px;
-    margin-left: 20px;
-    margin-top: 60px;
+  font-family: "Sora", Sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: -0.8px;
+  max-width: 250px;
+  margin-left: 20px;
+  margin-top: 60px;
+  
+
+  @media screen and (max-width:600px) {
+    font-size: 27px;
+    display: flex;
+   margin-left: 5px;
+    margin-bottom: 60px;
+    text-align: center;
+
+  }
 }
 
 
 
 .cardverde {
-  width: 336px; 
-  height: 400px; 
-  background-color:#146E3A;
+  width: 336px;
+  height: auto;
+  background-color: #146E3A;
   border-radius: 0 20px 0 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-  
-  
-  
+  font-family: "Sora", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+
+  @media screen and (max-width:600px) {
+    width: 100%;
+    height: auto;
+    
+  }
+
+
+
 }
 
-.textocardverde{
-padding: 30px;
+.textocardverde {
+  padding: 30px;
 }
 
 .textocardverde2 {
@@ -574,57 +887,92 @@ padding: 30px;
 
 
 .cardverde2 {
-  width: 336px; 
-  height: 400px; 
-  background-color:#146E3A;
+  width: 336px;
+  height: auto;
+  background-color: #146E3A;
   border-radius: 0 20px 0 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  @media screen and (max-width:600px) {
+    width: 100%;
+    height: auto;
+    
   
- 
+    
+    
+  }
+
+
 }
 
 .cardverde2 p {
   color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
+  font-family: "Sora", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
 }
 
 .todoscards {
   display: flex;
   justify-content: center;
   gap: 20px;
- 
+  
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    
+    
+  }
+
 }
 
 
 
 .containerazul {
-  
+
   padding: 50px 0px 0px 0px;
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+
+   
+    
+  }
 }
 
 .azulbackground {
   background-image: url('../detail-from-ancient-colosseum-rome-italy-1.webp');
   background-repeat: no-repeat;
   overflow: auto;
- 
- 
- width: 100%;
+
+
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding-bottom: 40px;
- 
-  
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    flex-direction: column;
+
+    
+  }
+
+
 }
 
 
 
 .brancobackground {
-text-align: center;
+  text-align: center;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   width: 1000px;
@@ -634,42 +982,55 @@ text-align: center;
   align-items: center;
   flex-direction: column;
   padding-bottom: 30px;
-  
-  
-  
-  
- 
-  
- 
+  @media screen and (max-width:600px) {
+    padding: 0;
+    width: 100%;
+    
+  }
+
+
+
+
+
+
+
 }
 
 .brancobackground h1 {
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 41px;
-    letter-spacing: -0.3px;
-    max-width: 300px;
-    padding: 10px;
+  font-family: "Sora", Sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: -0.3px;
+  max-width: 300px;
+  padding: 10px;
+  width: 100%;
+
+  @media screen and (max-width:600px) {
+    font-size: 29px;
     
-    
+  }
+
+
 }
 
 .brancobackground p {
   text-align: center;
-    color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -1px;
-    padding: 15px;
-    max-width: 800px;
-    text-align: center;
+  color: #3E3E3E;
+  font-family: "Sora", Sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -1px;
+  padding: 15px;
+  max-width: 800px;
+  text-align: center;
 }
 
-.falarespecialistabotao{
+
+
+.falarespecialistabotao {
   font-family: "Sora", Sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -677,9 +1038,17 @@ text-align: center;
   border-radius: 10px 10px 10px 10px;
   padding: 20px 30px 20px 30px;
   box-shadow: none;
-  
-  
-  
+  cursor: pointer;
+  border: none;
+
+
+  @media screen and (max-width:600px) {
+    font-size: 14px;
+    
+  }
+
+
+
 }
 
 .buttonposicao {
@@ -693,70 +1062,136 @@ text-align: center;
   flex-direction: column;
   gap: 20px;
   max-width: fit-content;
-  
+
   margin-left: 90px;
-  
+  @media screen and (max-width:600px) {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    
+    
+  }
+
+}
+
+
+
+.fotoequipe  {
+  width: 550px;
+  object-fit: contain;
+  @media screen and (max-width:600px) {
+    width: 100%;
+    object-fit: contain;
+    height: 40%;
+    
+  }
 }
 
 
 
 .textoespecialistas p {
   color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    max-width: fit-content;
+  font-family: "Sora", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  max-width: fit-content;
+  @media screen and (max-width:600px) {
+    align-self: center;
+        font-size: 17px;
+        line-height: 1.3em;
     
+  }
+
 }
 
 .textoespecialistas h1 {
   color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 41px;
-    letter-spacing: -0.3px;
-    max-width: 350px;
+  font-family: "Sora", Sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: -0.3px;
+  max-width: 350px;
+
+  @media screen and (max-width:600px) {
+    font-size: 27px;
+    text-align: center;
+  }
 }
 
 .textoespecialistas p1 {
   color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-   max-width: 390px;
+  font-family: "Sora", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  max-width: 390px;
+
+  @media screen and (max-width:600px) {
+    text-align: center;
+        font-size: 17px;
+        line-height: 1.3em;
+    
+  }
+
 }
 
 .textoespecialistas p2 {
   color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    max-width: 390px;
+  font-family: "Sora", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  max-width: 390px;
+
+  @media screen and (max-width:600px) {
+    text-align: center;
+        font-size: 17px;
+        line-height: 1.3em;
+    
+  }
+
 }
+
 .textoespecialistas p3 {
   color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    max-width: 390px;
+  font-family: "Sora", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  max-width: 390px;
+
+  @media screen and (max-width:600px) {
+    text-align: center;
+        font-size: 17px;
+        line-height: 1.3em;
+    
+  }
+
 }
+
 .textoespecialistas p4 {
   color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    max-width: 390px;
+  font-family: "Sora", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  max-width: 390px;
+
+  @media screen and (max-width:600px) {
+    text-align: center;
+        font-size: 17px;
+        line-height: 1.3em;
+    
+  }
+
 }
 
 .containerexclusividade {
@@ -770,11 +1205,20 @@ text-align: center;
 
 
 .containerprocessos {
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px;
+
+  
+}
+
+.containerprocessos p {
+  @media screen and (max-width:600px) {
+    
+   
+  }
 }
 
 .containerseguranca {
@@ -797,97 +1241,103 @@ text-align: center;
   gap: 35px;
   justify-content: center;
   background-color: white;
-  
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+   
+  }
+
 }
 
 .containerbranco p {
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 41px;
-    padding-top: 20px;
-    letter-spacing: -0.3px;
-    max-width: 200px;
-    text-align: center;
+  font-family: "Sora", Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41px;
+  padding-top: 20px;
+  letter-spacing: -0.3px;
+  max-width: 200px;
+  text-align: center;
 }
 
 .containerbranco p4 {
   text-align: center;
-    color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    padding: 10px;
+  color: #3E3E3E;
+  font-family: "Sora", Sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  padding: 10px;
 }
 
 .containerbranco p1 {
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 41px;
-    letter-spacing: -0.3px;
-    padding-top: 20px;
-    max-width: 250px;
-    text-align: center;
+  font-family: "Sora", Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: -0.3px;
+  padding-top: 20px;
+  max-width: 250px;
+  text-align: center;
 }
 
 .containerbranco p5 {
   text-align: center;
-    color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    padding: 10px;
+  color: #3E3E3E;
+  font-family: "Sora", Sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  padding: 10px;
 }
 
 .containerbranco p2 {
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 41px;
-    padding-top: 20px;
-    letter-spacing: -0.3px;
-    max-width: 200px;
-    text-align: center;
+  font-family: "Sora", Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41px;
+  padding-top: 20px;
+  letter-spacing: -0.3px;
+  max-width: 200px;
+  text-align: center;
 }
 
 .containerbranco p6 {
   text-align: center;
-    color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    padding: 10px;
+  color: #3E3E3E;
+  font-family: "Sora", Sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  padding: 10px;
 }
 
 .containerbranco p3 {
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 41px;
-    padding-top: 20px;
-    letter-spacing: -0.3px;
+  font-family: "Sora", Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41px;
+  padding-top: 20px;
+  letter-spacing: -0.3px;
 }
 
 .containerbranco p7 {
   text-align: center;
-    color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    padding: 10px;
+  color: #3E3E3E;
+  font-family: "Sora", Sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  padding: 10px;
 }
 
 
@@ -897,124 +1347,358 @@ text-align: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
-  padding-right: 200px;
+  padding-right: 100px;
   
-  
+ 
+ 
+ 
+  @media screen and (max-width:600px) {
+    display: flex;
+   padding: 40px;
+   justify-content: center;
+   padding-left: 0;
+   padding-right: 0;
+
+
+   
+    
+  }
+
+
 }
 
 .quadradobandeira {
   background-image: url('../retangulo-bandeira.webp');
   background-repeat: no-repeat;
-  height: 609px;
-  width: 691px;
-  
- 
- 
+  background-size: cover;
+  height: fit-content;
+  padding: 95px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   background-image: none;
+   background-color: #f5f0f1;
+   height: fit-content;
+   width: fit-content;
+   padding: 24px;
+   gap: 40px;
+   text-align: center;
+   
+    
+    
+  }
+
+
+
 }
 
 .quadradobandeira h1 {
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 41px;
-    letter-spacing: -0.3px;
+  font-family: "Sora", Sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: -0.3px;
   display: flex;
   max-width: 400px;
-  
-  
-  
-  
+
+  @media screen and (max-width:600px) {
+    font-size: 27px;
+    line-height: 1.2em;
+    
+  }
+
+
+
+
 }
 
 .quadradobandeira p {
 
   color: #3E3E3E;
-    font-family: "Sora", Sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
+  font-family: "Sora", Sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
   max-width: 450px;
   margin-top: 20px;
-  
+  @media screen and (max-width:600px) {
+    text-align: center;
+        font-size: 17px;
+        line-height: 1.3em;
+
+    
+  }
+
 }
 
 .textobandeira {
   margin-top: 150px;
   margin-left: 100px;
- 
-  
-  
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    
+    
+    
+  }
+
+
+
 }
 
 .quadradobandeira a {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  margin-left: 100px;
+ 
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    margin: 0;
+  }
 }
 
 
 
 .footer {
-  display:flex;
-  justify-content: center;
-  
+
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
   background-color: #0D3384;
   background-repeat: no-repeat;
+  overflow: visible;
+  @media screen and (max-width:600px) {
+    display: flex;
+   flex-direction: column;
+   overflow: visible;
+    
+  }
+
+
+
+}
+
+.iconesredes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  @media screen and (max-width:600px) {
+    gap: 30px;
+  }
+}
+
+.containerescritorios {
+  display: flex;
+  padding: 50px;
+  gap: 50px;
+  justify-content: center;
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    align-items: center;
+    padding: 0;
+ 
+  }
+}
+
+.containerescritorios img {
+  height: auto;
+  @media screen and (max-width:600px){
   
 
- 
+  }
 }
+
+.containerredesociais{
+ display: flex;
+ flex-direction: column;
+
+ @media screen and (max-width:600px) {
+  padding: 10px;
+ }
+}
+
+
 
 .footer img {
   display: flex;
+  align-self: center;
+
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    width: 100%;
+    
+  }
 }
 
 
 .escritoriosp {
-  text-align: center;
-    color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
+  text-align: start;
+  color: #FFFFFF;
+  font-family: "Sora", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  max-width: 390px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media screen and (max-width:600px) {
+    text-align: center;
+    
+    
+    
+  }
+  
+}
+
+.escritoriosp p {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    justify-content: center;
+    
+  }
+}
+
+.escritoriosp p2 {
+  @media screen and (max-width:600px) {
     font-size: 17px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    max-width: 300px;
+    
+
+    
+  }
+}
+
+.escritoriosp img {
+  margin-top: 2px;
 }
 
 .escritoriopt {
-  text-align: center;
-    color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    max-width: 300px;
+  text-align: start;
+  color: #FFFFFF;
+  font-family: "Sora", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  max-width: 380px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media screen and (max-width:600px) {
+    text-align: center;
+    
+    
+    
+  }
+}
+
+.escritoriopt p {
+  display: flex;
+  gap: 5px;
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.escritoriopt img {
+  margin-top: 2px;
+}
+
+
+.containercontato {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+
+  @media screen and (max-width:600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.containercontato p {
+  display: flex;
+  gap: 5px;
+}
+
+
+.containercontato img {
+  margin-top: 2px;
 }
 
 .textocontato {
-  text-align: center;
-    color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    max-width: 300px;
+  text-align: start;
+  color: #FFFFFF;
+  font-family: "Sora", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  max-width: 300px;
+
+  
+
 }
 
 .textoemail {
-  text-align: center;
-    color: #FFFFFF;
-    font-family: "Sora", Sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.9px;
-    max-width: 300px;
+  text-align: start;
+  color: #FFFFFF;
+  font-family: "Sora", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.9px;
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width:600px) {
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   overflow: visible;
+  }
+  
+
+}
+
+.textoemail p1 {
+  @media screen and (max-width:600px) {
+    width: fit-content;
+    overflow: visible;
+    
+  }
 }
 
 .equipeeunaeuropa {
@@ -1024,4 +1708,16 @@ text-align: center;
   justify-content: center;
   align-items: center;
   gap: 40px;
+
+  @media screen and (max-width:600px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 20px;
+   
+    
+
+    
+  }
 }

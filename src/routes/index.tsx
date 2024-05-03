@@ -18,7 +18,7 @@ export default component$(() => {
 <div class="containerbandeiratexto">
 <div class="mainsection">
   <div class="textomain">
-  <p2>Por que tirar sua cidadania com a gente?</p2>
+  <p2><img src="../attachment-icon.png" width={30} height={30}/>Por que tirar sua cidadania com a gente?</p2>
   <h1>Tenha um parceiro estratégico atuando no seu processo</h1>
   <p>A cidadania italiana é um direito seu, mas você já deve saber que é um processo que exige bastante atenção e tempo para executar.</p>
   <p>A Eu Na Europa conta com um time preparado para te auxiliar em todas as etapas do processo.</p>
@@ -32,6 +32,7 @@ export default component$(() => {
   <Card/>
   <Sections/>
   <Footer/>
+  
   
   
 
